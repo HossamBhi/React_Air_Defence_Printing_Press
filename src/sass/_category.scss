@@ -1,0 +1,116 @@
+// @import "~rfs/scss";
+@import "_schema";
+
+.categoriesCon {
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // .swiper-wrapper {
+  //   padding-left: 50px;
+  //   padding-right: 50px;
+  // }
+}
+.categoryTitle {
+  padding-bottom: 20px;
+}
+.categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.category {
+  width: 100%;
+  background-color: #fff;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  box-shadow: $simple_boxshadow;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  text-decoration: none;
+}
+// .category:hover {
+//   background-color: $hover_color;
+// }
+.categoryDetails {
+  // padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+.categoryImage {
+  // border-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  // box-shadow: $simple_boxshadow;
+  width: 100%;
+  // height: 70%;
+  // height: 180px;
+  height: 240px;
+  background-color: #f8f9fa;
+}
+
+.categoryName {
+  font-size: 1.275rem;
+  color: $color_text1;
+  line-height: 26px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  padding-top: 8px;
+}
+.categoryDes {
+  font-size: 0.975rem;
+  padding-top: 8px;
+  text-align: justify;
+  color: $color_text_des;
+  padding-bottom: 10px;
+  max-height: (0.975 * 2.5rem);
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.categoryBtn {
+  color: #fff;
+  background-color: $primary-color;
+  font-size: 1rem;
+  padding: 4px 25px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  align-self: flex-end;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin-top: 26px;
+  // margin-bottom: 4px;
+}
+.categoryBtn:hover {
+  color: $primary-color;
+  background-color: #fff;
+  border: 1px solid $primary-color;
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  // tabet
+}
+@media (min-width: 768px) and (max-width: 960px) {
+  // tabet
+}
+@media (min-width: 961px) {
+  /*  landscape iPad, lo-res laptops ands desktops */
+  .categoriesCon {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .categoryImage {
+    height: 180px;
+  }
+}

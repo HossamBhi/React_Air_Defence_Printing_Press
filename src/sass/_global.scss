@@ -1,0 +1,35 @@
+@import "_schema";
+// @font-face {
+//   // Almarai-Regular
+//   src: url("../assets/fonts/Tajawal-Regular.ttf");
+//   // src: url("../assets/fonts/NotoSansArabic_Condensed-Regular.ttf");
+//   font-family: $font_regular;
+// }
+// @font-face {
+//   font-family: $font_en_regular;
+//   src: url("../assets/fonts/NotoSans-Regular.ttf");
+// }
+* {
+  box-sizing: border-box;
+  // font-family: $font_regular;
+}
+body,
+html,
+.App {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  direction: rtl;
+}
+
+img {
+  max-width: 100%;
+}
+p,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
